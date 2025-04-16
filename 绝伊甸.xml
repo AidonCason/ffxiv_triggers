@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<TriggernometryExport PluginVersion="1.2.0.736">
+  <ExportedFolder Id="9082bdb7-a31f-442c-a7d2-626ec12e872c" Name="绝伊甸" Enabled="true">
+    <Folders />
+    <Triggers>
+      <Trigger Enabled="true" Name="翅膀读条" Id="2c677bd8-ed40-49e9-8acb-b228ab1acb40" RegularExpression="^.{15}\S+ 14:(?&lt;sid&gt;4.{7}):[^:]*:9D(?&lt;type&gt;2|7)9:">
+        <Actions>
+          <Action OrderNumber="1" ActionType="Placeholder" Asynchronous="False" Description="2暗光 7光暗" DescriptionOverride="True" />
+          <Action OrderNumber="2" UseTTSTextExpression="先光,右远离" ActionType="UseTTS">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="3" UseTTSTextExpression="先暗,左靠近" ActionType="UseTTS">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+        </Actions>
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
