@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<TriggernometryExport PluginVersion="1.2.0.736">
+  <ExportedFolder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^968$" Id="9f50a4cf-01de-4337-97cc-385d5bd41756" Name="绝龙诗" Enabled="true">
+    <Folders>
+      <Folder Id="ba6929ad-319e-461d-938a-7ddf9a482170" Name="P3" Enabled="true">
+        <Folders>
+          <Folder Id="ff721f2c-6692-48da-97c8-e801d41630b0" Name="八人塔" Enabled="true">
+            <Folders>
+              <Folder Id="e074942d-1770-4910-b13e-5769013431c3" Name="记录塔" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Name="3.右下塔-2" Id="a5ffb696-ea51-4afe-8131-6f1fec9a3d52" RegularExpression="^.{14} StartsCasting 14:(?&lt;tid&gt;4[0-9A-F]{7}):.+?:671(?&lt;type&gt;[789A]):">
+                    <Actions>
+                      <Action OrderNumber="1" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="1" ListVariableIndex="3" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="2" ListVariableIndex="3" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="3" ListVariableIndex="3" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="4" ListVariableIndex="3" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </Condition>
+                  </Trigger>
+                  <Trigger Enabled="true" Name="2.右上塔-1" Id="6df58958-d693-41a9-b031-bcc54e18f1bf" RegularExpression="^.{14} StartsCasting 14:(?&lt;tid&gt;4[0-9A-F]{7}):.+?:671(?&lt;type&gt;[789A]):">
+                    <Actions>
+                      <Action OrderNumber="1" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="1" ListVariableIndex="2" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="2" ListVariableIndex="2" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="3" ListVariableIndex="2" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="4" ListVariableIndex="2" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Trigger>
+                  <Trigger Enabled="true" Name="4.左下塔-3" Id="5f54a582-1e17-4798-8def-52ddd9cfc68d" RegularExpression="^.{14} StartsCasting 14:(?&lt;tid&gt;4[0-9A-F]{7}):.+?:671(?&lt;type&gt;[789A]):">
+                    <Actions>
+                      <Action OrderNumber="1" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="1" ListVariableIndex="4" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="2" ListVariableIndex="4" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="3" ListVariableIndex="4" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="4" ListVariableIndex="4" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </Condition>
+                  </Trigger>
+                  <Trigger Enabled="true" Name="1.左上塔-4" Id="0139d423-1137-4825-a7ed-149ac3b8cb75" RegularExpression="^.{14} StartsCasting 14:(?&lt;tid&gt;4[0-9A-F]{7}):.+?:671(?&lt;type&gt;[789A]):">
+                    <Actions>
+                      <Action OrderNumber="1" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="1" ListVariableIndex="1" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="2" ListVariableIndex="1" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="3" ListVariableIndex="1" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" ListVariableOp="Set" ListVariableName="p3_tower" ListVariableExpression="4" ListVariableIndex="1" ActionType="ListVariable">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${type}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="858afc1a-d689-49c0-ba1f-b4843904a5f7" Name="踩塔播报" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Name="播报补塔" Id="b4179022-5796-496c-a524-c535a307e2c1" RegularExpression="^.{14} StartsCasting 14:.+?:.+?:671[789A]:" PeriodRefire="Deny" RefirePeriodExpression="1000" Description="1">
+                    <Actions>
+                      <Action OrderNumber="1" ActionType="Placeholder" ExecutionDelayExpression="500" />
+                      <Action OrderNumber="2" UseTTSTextExpression="原地塔" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[2]}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" UseTTSTextExpression="踩左塔" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[2]}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[3]}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" UseTTSTextExpression="踩右塔" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[2]}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[3]}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[1]}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="5" UseTTSTextExpression="对面塔" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[2]}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[3]}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[1]}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${lvar:p3_tower[4]}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${pvar:raid_duty}" ExpressionTypeL="String" ExpressionR="ST" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Trigger>
+                </Triggers>
+              </Folder>
+            </Folders>
+            <Triggers>
+              <Trigger Enabled="true" Name="播报塔" Id="c172cbce-e5c5-447f-93e2-610ded3a591d" RegularExpression="^.{14} StartsCasting 14:.+?:.+?:671[789A]:" PeriodRefire="Deny" RefirePeriodExpression="1000" Description="1">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="${var:Souma_Team_Role}" TextAuraAlignment="TopCenter" TextAuraEffect="Bold" TextAuraFontSize="26.25" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="tower_1" TextAuraExpression="${lvar:p3_tower[1]}         ${lvar:p3_tower[2]}" TextAuraXIniExpression="1100" TextAuraYIniExpression="290" TextAuraWIniExpression="400" TextAuraHIniExpression="200" TextAuraOIniExpression="100" TextAuraTTLTickExpression="7*1000-${_sincems}" TextAuraFontName="微软雅黑" ActionType="TextAura" ExecutionDelayExpression="200" Asynchronous="False" />
+                  <Action OrderNumber="2" UseTTSTextExpression="${var:Souma_Team_Role}" TextAuraEffect="Bold" TextAuraFontSize="26.25" TextAuraForeground="White" TextAuraOutline="Fuchsia" TextAuraName="tower_2" TextAuraExpression="${lvar:p3_tower[4]}         ${lvar:p3_tower[3]}" TextAuraXIniExpression="1100" TextAuraYIniExpression="290" TextAuraWIniExpression="400" TextAuraHIniExpression="200" TextAuraOIniExpression="100" TextAuraTTLTickExpression="7*1000-${_sincems}" TextAuraFontName="微软雅黑" ActionType="TextAura" Asynchronous="False" />
+                  <Action OrderNumber="3" UseTTSTextExpression="${lvar:p3_tower[1]} ${lvar:p3_tower[2]} ${lvar:p3_tower[3]} ${lvar:p3_tower[4]}" ActionType="UseTTS" />
+                </Actions>
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="51af6733-c43a-43ec-9bdd-9bbed26df875" Name="分身线" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="false" Name="播报分身死刑连线" Id="fa9a289e-0307-4a95-8e25-4aaff58673e8" RegularExpression="^.{14} Tether 23:(?&lt;tid&gt;4[0-9A-F]{7}):[^:]+?:(?&lt;pid&gt;1[0-9A-F]{7}):[^:]+?:.{4}:0000:0054:[0-9A-F]{8}:000F:">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="四点接线" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" UseTTSTextExpression="衣点接线" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="3" UseTTSTextExpression="二点接线" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="4" UseTTSTextExpression="三点接线" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxiventity[${tid}].y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${tid}" ExpressionTypeL="String" ExpressionR="${var:p3_true_id}" ExpressionTypeR="String" ConditionType="RegexNotMatch" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Name="记录本体ID" Id="83422445-cced-4456-8133-3c3d8a80f886" RegularExpression="^.{14} StartsCasting 14:(?&lt;tid&gt;4[0-9A-F]{7}):[^:]+?:670B:">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetString" VariableName="p3_true_id" VariableExpression="${tid}" ActionType="Variable" />
+                  <Action OrderNumber="2" TriggerOp="EnableTrigger" TriggerId="fa9a289e-0307-4a95-8e25-4aaff58673e8" ActionType="Trigger" />
+                </Actions>
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
+        <Triggers>
+          <Trigger Enabled="true" Name="P3变量初始化" Id="0490bf58-d751-47bb-9952-66bdeca3a684" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" VariableName="p3_true_id" ActionType="Variable" />
+              <Action OrderNumber="2" ListVariableName="p3_tower" ActionType="ListVariable" />
+              <Action OrderNumber="3" TriggerOp="DisableTrigger" TriggerId="fa9a289e-0307-4a95-8e25-4aaff58673e8" ActionType="Trigger" />
+            </Actions>
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="f4b6a6ca-f6a0-4ce7-a5aa-ffb5a52b0848" Name="AAA初始化" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="1战斗开始初始化" Id="9cdfa633-c09a-43e8-b2e8-3a13b808b66a" RegularExpression="战斗开始|戦闘開始|Engage!" PeriodRefire="Deny" RefirePeriodExpression="30000">
+            <Actions>
+              <Action OrderNumber="1" TriggerId="0490bf58-d751-47bb-9952-66bdeca3a684" TriggerForce="regexp,conditions" ActionType="Trigger" />
+            </Actions>
+          </Trigger>
+          <Trigger Enabled="true" Name="2团灭初始化" Id="c3800960-eab3-4c1a-9af9-55117e51aa9d" RegularExpression="^.{14} Director 21:.{8}:400000(03|1[026])|任务结束了。|has ended\.|の攻略を終了した。|4000000F|40000011">
+            <Actions>
+              <Action OrderNumber="1" TriggerId="9cdfa633-c09a-43e8-b2e8-3a13b808b66a" TriggerForce="regexp,conditions" ActionType="Trigger" />
+            </Actions>
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers />
+  </ExportedFolder>
+</TriggernometryExport>
