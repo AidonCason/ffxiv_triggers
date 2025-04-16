@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <TriggernometryExport PluginVersion="1.2.0.736">
   <ExportedFolder Id="57df05ce-ceff-4da6-85fb-03a68879ebd9" Name="杂项" Enabled="true">
     <Folders />
@@ -7,7 +6,7 @@
         <Actions>
           <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="17" KeyPressWindow="^最终.*" KeyPressProcId="${_ffxivprocid}" ActionType="KeyPress" ExecutionDelayExpression="10000" />
           <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="17" KeyPressWindow="^最终.*" KeyPressProcId="${_ffxivprocid}" ActionType="KeyPress" ExecutionDelayExpression="100" />
-          <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e 喵の打印：太久没动了，雅白" Enabled="False" ActionType="NamedCallback" />
+          <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e 提示：太久没动了" Enabled="False" ActionType="NamedCallback" />
         </Actions>
       </Trigger>
     </Triggers>
